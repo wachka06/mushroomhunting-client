@@ -1,0 +1,53 @@
+.side-bar {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #FFB4A4;
+  /* border: 1px solid red; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 425px;
+  height: 100vh;
+  padding: 30px;
+  overflow: scroll;
+  text-align: center;
+}
+
+.mushroom-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mushroom-list-item {
+  background-color: #F2E2DE;
+  width: 40%;
+  margin: 10px;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.mushroom-list-item:hover {
+  background-color: #d6b9b1;
+  width: 40%;
+  margin: 10px;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  border-radius: 25px;
+  /* transform: scale(1.05);
+  transition: 0.4s */
+}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    border-radius: 25px;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+    border-radius: 25px
+}

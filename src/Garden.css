@@ -1,0 +1,69 @@
+.garden {
+  /* border: 1px solid blue; */
+  background-image: url("./sidewalk.png"), url("./dark_forrest4.png");
+  /* background-image: url("./dark_forrest4.png"), url("./dark_forrest4.png"); */
+  background-repeat: no-repeat, repeat;
+  background-color: #167F34;
+  margin: 30px;
+  font-family: 'Lato', sans-serif;
+  width: 900px;
+  height: 600px;
+  position: relative;
+}
+
+.garden-section {
+  font-family: 'Josefin Sans', sans-serif;
+  padding-left: 10px;
+}
+
+.mushroom-card {
+  position: absolute;
+  transition: 0.4s
+}
+
+.mushroom-card:hover {
+  transform: scale(1.15);
+}
+
+.mushroom-card button {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: 0.5s;
+  font-size: 15px;
+}
+
+.mushroom-card:hover button {
+  display: block;
+}
+
+.mushroom-card img {
+  width: 80px;
+  height: 90px;
+  animation: wiggle 1s linear infinite;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(-15deg); }
+  50% { transform: rotate(15deg); }
+  100% {transform: rotate(-15deg); }
+}
+
+@keyframes wiggleMore {
+  0% { transform: rotate(-35deg); }
+  25% { transform: rotate(15deg); }
+  75% { transform: rotate(-15deg); }
+  100% {transform: rotate(35deg); }
+}
+
+@keyframes bounce {
+  0% { transform: scaleY(1) }
+  50%  { transform: scaleY(0.7) translateY(20px); }
+  70% { transform: scaleY(1) translateY(-15px);}
+  100% { transform: scaleY(1); }
+}
